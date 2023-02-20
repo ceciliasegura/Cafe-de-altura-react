@@ -1,4 +1,3 @@
-import Button from "../Button/Button";
 import NavLink from "../NavLink/NavLink";
 
 
@@ -6,14 +5,14 @@ export default function Header() {
     return (
         <div className="flex flex-row bg-black p-6">
             <div className="flex flex-row gap-4">
-                <p className="text-white">cafedealtura.com</p>
-                <img src="assets/coffe-cap.png" alt="" />
+                <a href="/"><p className="text-white">cafedealtura.com</p></a>
+                <a href="/"><img src="assets/coffe-cap.png" alt="" /></a>
             </div>
             <NavLink/>
             <div className="ml-auto flex flex-row gap-4">
                 <img src="assets/phone.png" alt="" />
                 <p className="text-white w-28">+34 62137842</p>
-                <Button text={"Iniciar sesion"} width={"w-28"} color={"text-white"} url={"/"}/>
+                <button className="w-28 text-white bg-zinc-400">Iniciar sesion</button>
                 <a href="/shop"><img src="assets/cart.png"  alt="" /></a>
             </div>
         </div>
