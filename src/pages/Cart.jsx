@@ -23,12 +23,47 @@ export default function Cart() {
       setTotalPrice(subTotalPrice + getShippingPrice(free));
    }
 
+   const addItem = (event, id) => {
+      event.preventDefault();
+      coffesStorage.map(coffe => {
+         if (coffe.id === id) {
+            return { ...coffe, count: coffe.count++ }
+         } else {
+            return coffe;
+         }
+      });
+      setCoffesStorage(coffesStorage);
+      const subTotal = getSubTotal(coffesStorage);
+      setSubTotalPrice(subTotal);
+      setTotalPrice(subTotal + getShippingPrice(free));
+      localStorage.setItem("coffes", JSON.stringify(coffesStorage));
+   }
+
+   const removeItem = (event, id) => {
+      event.preventDefault();
+      coffesStorage.map(coffe => {
+         if (coffe.id === id) {
+            return { ...coffe, count: coffe.count-- }
+         } else {
+            return coffe;
+         }
+      });
+      setCoffesStorage(coffesStorage);
+      const subTotal = getSubTotal(coffesStorage);
+      setSubTotalPrice(subTotal);
+      setTotalPrice(subTotal + getShippingPrice(free));
+      localStorage.setItem("coffes", JSON.stringify(coffesStorage));
+   }
+
+   const getSubTotal = (coffes) =>{
+      return coffes.map(coffe => coffe.count * coffe.price).reduce((prev, next) => prev + next);
+   }
    useEffect(() => {
       const cStorage = JSON.parse(localStorage.getItem('coffes'));
 
       if (cStorage !== null) {
          setCoffesStorage(cStorage);
-         const subTotal = cStorage.map(coffe => coffe.count * coffe.price).reduce((prev, next) => prev + next);
+         const subTotal = getSubTotal(cStorage);
          setSubTotalPrice(subTotal);
          setTotalPrice(subTotal + getShippingPrice(free));
       }
@@ -49,7 +84,7 @@ export default function Cart() {
                      coffesStorage.map((coffe, i) => {
                         return (
                            <div key={i}>
-                              <ProductCart number={coffe.count} img={coffe.img} name={coffe.text} price={coffe.price}/>
+                              <ProductCart number={coffe.count} img={coffe.img} name={coffe.text} price={coffe.price} id={coffe.id} addItem={addItem} removeItem={removeItem} />
                               <hr />
                            </div>
                         )
