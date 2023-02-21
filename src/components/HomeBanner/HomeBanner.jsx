@@ -11,7 +11,7 @@ export default function HomeBanner() {
                     los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.</p>
                 <div className="flex gap-4">
                     <Button text={"Descubrir origenes"} color={"text-white"} url={"/"} background={"bg-black"}/>
-                    <Button text={"Comprar café"} color={"text-white"} url={"/shop"} background={"bg-green-900	"}/>
+                    <Button text={"Comprar café"} color={"text-white"} url={"/shop"} background={"bg-green-900"}/>
                 </div>
             </div>
             <img src="assets/Hero.jpeg" alt="" className="rounded-3xl shadow-normal" />

@@ -13,7 +13,7 @@ export default function Header() {
                 <img src="assets/phone.png" alt="" />
                 <p className="text-white w-28">+34 62137842</p>
                 <button className="w-28 text-white bg-zinc-400">Iniciar sesion</button>
-                <a href="/shop"><img src="assets/cart.png"  alt="" /></a>
+                <a href="/cart"><img src="assets/cart.png"  alt="" /></a>
             </div>
         </div>
     )
