@@ -5,7 +5,7 @@ export default function HomeBanner() {
         <div className="flex gap-6 py-12 px-10 font-semibold justify-center">
 
             <div className="head-article flex flex-col justify-center gap-4 [text-shadow:_0px_3px_3px_rgba(0,0,0,0.25)]">
-                <h2 className="text-lg text-lime-800">De la planta a tú casa</h2>
+                <h2 className="text-green-coffe text-lime-800">De la planta a tú casa</h2>
                 <h1 className="text-[40px]">El mejor café del mundo, ahora en tú casa.</h1>
                 <p className="text-sm font-normal"> Trabajamos con agricultores de todo el mundo para seleccionar
                     los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.</p>

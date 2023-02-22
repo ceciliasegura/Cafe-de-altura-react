@@ -14,7 +14,7 @@ export default function CoffeCardsHome() {
     return (
         <div className="flex flex-col p-10 gap-10 justify-center ">
             <div>
-                <p className="text-2xl font-medium text-lime-800 text-center">Novedades</p>
+                <p className="text-2xl font-medium text-green-coffe text-center">Novedades</p>
             </div>
 
             <div className="flex justify-center items-center flex-wrap gap-6">

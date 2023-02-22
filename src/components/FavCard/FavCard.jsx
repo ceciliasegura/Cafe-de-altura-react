@@ -10,8 +10,10 @@ export default function FavCard() {
                     <img src="assets/coffe-cap.png" alt="" />
                 </div>
                 <p className="text-xl">Te ayudamos en</p>
+                <div className="flex flex-col gap-4">
                 <ButtonIcon text={"+34 919490518"} icon={"assets/phone.png"} />
                 <ButtonIcon text={"hola@cafedealtura.com"} icon={"assets/mail.png"} />
+                </div>
             </div>
             <div className="flex flex-col gap-2">
 

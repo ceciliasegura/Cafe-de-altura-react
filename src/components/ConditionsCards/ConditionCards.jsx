@@ -3,7 +3,7 @@ import ConditionsCard from "./ConditionCard";
 export default function ConditionsCards() {
     return (
         <div className="bg-background bg-center p-20 gap-10 flex flex-col bg-cover">
-            <h1 className="text-white text-center text-2xl">Café con las mejores condiciones</h1>
+            <h1 className="text-white text-center text-2xl font-medium	">Café con las mejores condiciones</h1>
 
             <div className="text-black flex  justify-center items-center gap-10" >
                 <ConditionsCard icon={"assets/task.png" } text={"Recibe tu pedido sin preocuparte"} description={"Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás sin tu taza de la mañana. "}/>

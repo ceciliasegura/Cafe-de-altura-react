@@ -28,11 +28,11 @@ export default function CoffeCard({ imgSrc, text, price, id }) {
         localStorage.setItem("coffes", JSON.stringify(coffesStorage));
     }
     return (
-        <div className="flex flex-col items-center gap-6 p-6 border border-taupe rounded-lg shadow-md hover:bg-taupe transition-colors duration-500">
+        <div className="flex flex-col items-center gap-6 p-6 border border-taupe rounded-lg shadow-md hover:bg-beige-coffe transition-colors duration-500">
             <img src={imgSrc} alt="" />
             <h4>{text}</h4>
             <p><span>{price}</span>€</p>
-            <button onClick={(event) => addCoffe(event, id, text, price, imgSrc)}>Añadir</button>
+            <button className="w-16 h-8 text-sm text-white rounded bg-green-coffe" onClick={(event) => addCoffe(event, id, text, price, imgSrc)}>Añadir</button>
         </div>
     )
 }
