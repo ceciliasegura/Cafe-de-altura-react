@@ -15,7 +15,7 @@ export default function FavCard() {
                 <ButtonIcon text={"hola@cafedealtura.com"} icon={"assets/mail.png"} />
                 </div>
             </div>
-            <div className="flex ml-[550px] gap-32">
+            <div className="flex ml-[320px] gap-32">
             <div className="flex flex-col gap-2 ">
 
                 <p>Tienda</p>
