@@ -1,8 +1,8 @@
 export default function ContacUs() {
     return (
-        <div className="flex flex-row bg-bg-contac justify-between bg-beige-coffe">
+        <div className="flex flex-row  justify-between bg-beige-coffe">
 
-            <div className="flex flex-col justify-center p-10 gap-4 w-2/4	">
+            <div className="flex flex-col justify-center p-10 gap-4 w-6/12	">
 
                 <div className="flex flex-col justify-center items-start gap-5 text-grey ">
                     <h2 className="text-lg leading-6 font-semibold">Entra en contacto con nosotros.</h2>
@@ -34,7 +34,7 @@ export default function ContacUs() {
                 </div>
             </div>
 
-            <div className='bg-white p-8 w-2/5 flex justify-center items-center'> 
+            <div className='bg-white p-8 w-3/6 flex justify-center items-center'> 
 
                 <form className="flex flex-col gap-6 ">
                     <div className="form_fullname">
