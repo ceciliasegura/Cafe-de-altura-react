@@ -2,7 +2,7 @@ export default function NavLink (){
     return(
         <>
         
-        <nav className="text-white flex gap-6 pl-16">
+        <nav className="text-white flex gap-8 pl-16">
                 <a href="/shop">Tienda</a>
                 <a href="/">Suscripción</a>
                 <a href="/">Para empresas</a>

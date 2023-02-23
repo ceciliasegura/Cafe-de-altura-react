@@ -52,7 +52,7 @@ export default function ContacUs() {
                         <input className="w-w-full h-8 pt-1 rounded-md border w-96 h-8 pt-1" type="number" id="phone" placeholder="US +1 (555) 987-6543 " />
                     </div>
                     <div className="w-full h-40">
-                        <textarea className="w-96 rounded-md border" placeholder="¿En que podemos ayudarte?"></textarea>
+                        <textarea className="w-96 rounded-md border" rows="6" cols="25" placeholder="¿En que podemos ayudarte?"></textarea>
                     </div>
                     <div className="flex flex-row gap-1.5 ">
                         <input className="w-4 h-4 rounded-none flex flex-row" type="checkbox" id="checkbox" />

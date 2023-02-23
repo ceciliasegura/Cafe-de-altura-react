@@ -5,8 +5,8 @@ export default function Header() {
     return (
         <div className="flex flex-row bg-black p-6">
             <div className="flex flex-row gap-4">
-                <a href="/"><p className="text-white">cafedealtura.com</p></a>
-                <a href="/"><img src="assets/coffe-cap.png" alt="" /></a>
+                <a href="/"><p className="text-white font-outfit font-normal text-2xl leading-4">cafedealtura.com</p></a>
+                <a href="/"><img className= "w-5 h-6 flex-none order-1 flex-grow-0 " src="assets/coffe-cap.png" alt="" /></a>
             </div>
             <NavLink/>
             <div className="ml-auto flex flex-row gap-4">

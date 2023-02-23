@@ -7,6 +7,6 @@ export default function Button ({text, color, url, background}){
     }
 
     return (
-        <button className={color + " " + background + " p-2"} onClick={() => nextPath(url)}>{text}</button>
+        <button className={color + " " + background +" p-2"} onClick={() => nextPath(url)}>{text}</button>
     )
 }

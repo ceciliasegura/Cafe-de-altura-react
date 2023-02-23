@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
+    extend: { 
+      fontFamily: {
+        'outfit': ['Outfit', 'sans-serif'],
+      }, 
+
+
+    
       backgroundImage: theme => ({
         'background': "url('./img/background.jpeg')"
       }),
@@ -17,7 +23,7 @@ module.exports = {
         'blanco': '#FFFFFF',
         'negro': '#2B2A2B',
         'hovercafe': '#E3DED7',
-        'footer': '#1F1815',
+        'black-coffe': '#1F1815',
 
       }
     },
