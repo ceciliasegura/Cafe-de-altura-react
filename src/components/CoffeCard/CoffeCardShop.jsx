@@ -1,14 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { CoffeContext } from "../../context/CoffeProvider";
 import CoffeCard from "./CoffeCard";
 
 export default function CoffeCardShop() {
-    const [coffeProducts, setCoffeProducts] = useState([]);
-    
-    useEffect(() => {
-        fetch(`https://cafe-de-altura-api.vercel.app/api/products`)
-        .then(res => res.json())
-        .then(res => setCoffeProducts(res.products))
-    }, [] )
+    const {coffeProducts} = useContext(CoffeContext)
 
     return (
         <div className="flex flex-col p-10 gap-10 justify-center ">
