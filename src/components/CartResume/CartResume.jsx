@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { CoffeContext } from "../../context/CoffeProvider";
 import Button from "../Button/Button";
 
-export default function CartResume() {
+export default function CartResume({isCeckout}) {
     const {getPrice, free, subTotalPrice, totalPrice, iva} = useContext(CoffeContext)
 
     return (<div className="p-8 bg-beige-coffe h-4/6">
@@ -26,8 +26,8 @@ export default function CartResume() {
         <p className="text-right">Incluye {iva} € de IVA</p>
 
         <div className="flex gap-4 mt-4">
-            <Button text={"Ir a checkout"} color={"text-white"} url={"/resume"} background={"bg-green-900"} />
-            <a href="./shop.html">Seguir comprando</a>
+            <Button text={isCeckout ? "Pagar y realizar pedido" : "Ir a checkout"} color={"text-white"} url={isCeckout ? "/resume" : "/checkout"} background={"bg-green-coffe"} />
+            <a hidden={isCeckout} href="./shop" className="text-green-coffe">Seguir comprando</a>
         </div>
     </div>
     );

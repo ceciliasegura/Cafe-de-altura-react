@@ -33,7 +33,7 @@ export default function Cart() {
                </div>
                <ShippingCard/>
             </div>
-            <CartResume/>
+            <CartResume isCeckout={false}/>
          </div>
          
          <Footer />
