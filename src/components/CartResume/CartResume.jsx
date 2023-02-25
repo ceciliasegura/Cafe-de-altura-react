@@ -26,7 +26,7 @@ export default function CartResume({isCeckout}) {
         <p className="text-right">Incluye {iva} € de IVA</p>
 
         <div className="flex gap-4 mt-4">
-            <Button text={isCeckout ? "Pagar y realizar pedido" : "Ir a checkout"} color={"text-white"} url={isCeckout ? "/resume" : "/checkout"} background={"bg-green-coffe"} />
+            <Button text={isCeckout ? "Pagar y realizar pedido" : "Ir a checkout"} color={"text-white"} url={isCeckout ? "/resume" : "/checkout"} background={"bg-green-coffe"} disabled={totalPrice === 0}/>
             <a hidden={isCeckout} href="./shop" className="text-green-coffe">Seguir comprando</a>
         </div>
     </div>

@@ -1,6 +1,6 @@
 import ButtonIcon from "../Button/ButtonIcon";
 
-export default function FavCard() {
+export default function FaqCard() {
     return (
 
         <div className="text-white bg-black flex p-10 gap-14 justify-items-start">

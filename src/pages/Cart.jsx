@@ -8,7 +8,7 @@ import { CoffeContext } from "../context/CoffeProvider";
 
 export default function Cart() {
 
-   const {cart, numberItemsInCart} = useContext(CoffeContext)
+   const { cart, numberItemsInCart } = useContext(CoffeContext)
 
    return (
       <>
@@ -21,21 +21,22 @@ export default function Cart() {
                <div>
                   <p className="text-lg font-semibold	">Productos</p>
                   {
-                     cart.map((coffe, i) => {
-                        return (
-                           <div key={i}>
-                              <ProductCart number={coffe.count} img={coffe.img} name={coffe.text} price={coffe.price} id={coffe.id}  />
-                              <hr />
-                           </div>
-                        )
-                     })
+                     cart.length === 0 ? <p>La cesta está vacía</p> :
+                        cart.map((coffe, i) => {
+                           return (
+                              <div key={i}>
+                                 <ProductCart number={coffe.count} img={coffe.img} name={coffe.text} price={coffe.price} id={coffe.id} />
+                                 <hr />
+                              </div>
+                           )
+                        })
                   }
                </div>
-               <ShippingCard/>
+               <ShippingCard />
             </div>
-            <CartResume isCeckout={false}/>
+            <CartResume isCeckout={false} />
          </div>
-         
+
          <Footer />
       </>
    );
