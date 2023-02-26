@@ -21,7 +21,7 @@ export default function Cart() {
                <div>
                   <p className="text-lg font-semibold	">Productos</p>
                   {
-                     cart.length === 0 ? <p>La cesta está vacía</p> :
+                     cart.length === 0 ? <p className="my-4 p-8 bg-white-coffe">La cesta está vacía</p> :
                         cart.map((coffe, i) => {
                            return (
                               <div key={i}>

@@ -22,7 +22,7 @@ module.exports = {
         'negro': '#2B2A2B',
         'hovercafe': '#E3DED7',
         'black-coffe': '#1F1815',
-
+        'white-coffe':'#F7F5F3'
       }
     },
   },

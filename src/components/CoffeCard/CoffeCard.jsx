@@ -27,7 +27,7 @@ export default function CoffeCard({ imgSrc, text, price, id }) {
             
     }
     return (
-        <div className="flex flex-col items-center gap-6 p-6 border border-taupe rounded-lg shadow-md hover:bg-beige-coffe transition-colors duration-500">
+        <div className="flex flex-col items-center gap-6 p-6 border border-taupe rounded-lg shadow-md hover:bg-white-coffe transition-colors duration-500">
             <img src={imgSrc} alt="" />
             <h4>{text}</h4>
             <p><span>{price}</span>€</p>

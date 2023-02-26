@@ -17,7 +17,7 @@ export default function Header() {
             <div className="ml-auto flex flex-row gap-4">
                 <img src="assets/phone.png" alt="" />
                 <p className="text-white w-28">+34 62137842</p>
-                <button className="w-28 text-white bg-grey-coffe rounded font-semibold text-sm ">Iniciar sesion</button>
+                <button className="w-28 text-white bg-grey-coffe rounded font-semibold text-sm box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Iniciar sesion</button>
                 <div className="flex gap-1">
                     <a href="/cart"><img src="assets/cart.png" alt="" /></a>
                     <p className={`text-white ${numberItemsInCart === 0? 'hidden' : ''}`}>{numberItemsInCart}</p>

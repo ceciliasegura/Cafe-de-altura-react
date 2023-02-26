@@ -10,11 +10,11 @@ export default function HomeBanner() {
                 <p className="text-sm font-normal"> Trabajamos con agricultores de todo el mundo para seleccionar
                     los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.</p>
                 <div className="flex gap-4">
-                    <Button text={"Descubrir origenes"} color={"text-white"} url={"/"} background={"bg-black-coffe"} />
-                    <Button text={"Comprar café"} color={"text-white"} url={"/shop"} background={"bg-green-coffe"}/>
+                    <Button text={"Descubrir origenes"} color={"text-white"} url={"/shop"} background={"bg-black-coffe"} boxShadow={"shadow-lg shadow-black"}/>
+                    <Button text={"Comprar café"} color={"text-white"} url={"/shop"} background={"bg-green-coffe"}boxShadow={"shadow-lg shadow-black"}/>
                 </div>
             </div>
-            <img src="assets/Hero.jpeg" alt="" className="rounded-3xl shadow-normal" />
+            <img src="assets/Hero.jpeg" alt="" className="rounded-3xl shadow-xl" />
         </div>
     )
 }

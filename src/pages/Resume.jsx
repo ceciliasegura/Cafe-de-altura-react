@@ -19,8 +19,8 @@ export default function Resume() {
                         Lo recibirás dentro de las fechas acordadas en tu envío.
                         Hemos enviado un ticket a tu correo electrónico.</p>
                 </div>
-                <div className="p-8 bg-beige-coffe h-4/6">
-                    <p>Tu pedido</p>
+                <div className="p-8 bg-white-coffe h-4/6">
+                    <p className="text-lg font-semibold	">Tu pedido</p>
                     {
                         cart.map((coffe, i) => {
                             return (
@@ -34,18 +34,18 @@ export default function Resume() {
                     }
                     <hr className="mt-4 mb-4" />
                     <div className="flex justify-between gap-4">
-                        <p>SUBTOTAL</p>
+                        <p className="font-normal text-sm">SUBTOTAL</p>
                         <p className="text-right">{getPrice(subTotalPrice)}</p>
                     </div>
 
                     <div className="flex justify-between gap-4">
-                        <p>ENVÍO</p>
+                        <p className="font-normal text-sm">ENVÍO</p>
                         <p>{free ? 'Gratis' : '9,00 €'}</p>
                     </div>
                     <hr className="mt-4 mb-4" />
 
                     <div className="flex justify-between gap-4">
-                        <p>TOTAL</p>
+                        <p className="font-semibold text-sm">TOTAL</p>
                         <p>{getPrice(totalPrice)}</p>
                     </div>
                     <p className="text-right font-normal text-sm">Incluye {iva} € de IVA</p>

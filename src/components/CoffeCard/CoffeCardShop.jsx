@@ -8,7 +8,7 @@ export default function CoffeCardShop() {
     return (
         <div className="flex flex-col p-10 gap-10 justify-center ">
             <div>
-                <p className="text-2xl font-medium text-lime-800 text-center">Últimos orígenes</p>
+                <p className="text-2xl font-medium text-green-coffe text-center">Últimos orígenes</p>
             </div>
 
             <div className="flex justify-center items-center flex-wrap gap-6">
