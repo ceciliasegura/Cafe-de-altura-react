@@ -16,7 +16,7 @@ export const FrequentlyCard = ({ text1, text2 }) => {
                 <img src="assets/cocodrilo.png" className={`flex justify-between items-center w-2 h-1 ${show ? '' : 'rotate-180'}`} alt="" />
             </div>
             <div className={`border	border-beige-coffe w-full ${show ? '' : 'hidden'}`}></div>
-            <div className={`w-full h-px bg-grey opacity-30 ${show ? '' : 'hidden'} `}></div>
+            {/* <div className={`w-full h-px bg-grey opacity-30 ${show ? '' : 'hidden'} `}></div> */}
             <p className={`font-normal ${show ? '' : 'hidden'}`}>{text2}</p>
         </div>
     )
